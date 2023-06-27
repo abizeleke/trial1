@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.all{
+    display: none;
+    flex-direction: row;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 4.3;
+    min-width: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+@media(max-width:655px){
+    .stud{
+        flex-direction: column;
+    }
+    .stud .stud-pic{
+        width: 430px;
+        margin: 20px;
+        padding: 10px;
+    }
+    .stud .stud-pic img{
+        width: 100%;
+    }
+    .stud .stud-info2{
+        margin-top: 0px;
+    }
+    .main1 .stud .stud-info2{
+        margin-top: -19px;
+    }
+    .container .stud-upcoming table{
+        max-width: 455px;  
+    }
+    .container .stud-upcoming p{
+        width: 450px;
+    }
+    .main1 .student-profile-btn .btn-g1{
+        flex-direction: column;
+    }
+    .main2 .student-profile-btn .btn-g1{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:750px){
+    .main2 .student-profile-btn .btn-g1{
+        flex-direction: column;
+    }
+}
+@media(max-width:1010px){
+    .main1 .student-profile-btn .btn-g1{
+        flex-direction: column;
+    }
+}
+@media(max-width:1010px){
+    .main3 .student-profile-btn .btn-g1{
+        flex-direction: column;
+    }
+}

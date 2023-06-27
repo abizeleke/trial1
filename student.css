@@ -1,0 +1,371 @@
+.main1{
+    display: none;
+    flex-direction: column;
+    padding: 5px 20px 5px 15px;
+    background-color: rgb(227, 225, 230);
+}
+.student-topbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0px 12px 10px;
+    background-color: rgb(27, 170, 196);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.student-topbar img{
+    width: 20px;
+}
+.student-topbar p{
+    margin-left: 7px;
+    color: white;
+    font-size: 18px;
+}
+.student-profile-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 0px 5px 10px;
+}
+.student-profile-btn button{
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px 9px 12px;
+    font-size: 16px;
+    color: rgb(52, 183, 243);
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+}
+.student-profile-btn button:hover{
+    border-left: 1px solid rgb(201, 200, 200);
+    border-top: 1px solid rgb(201, 200, 200);
+    border-right: 1px solid rgb(201, 200, 200);
+    background-color: rgb(254, 254, 254);
+    color: rgb(114, 114, 114);
+}
+.student-profile-btn .btn-g1{
+    display: flex;
+    flex-direction: row;
+}
+.student-profile-btn .btn-g1 .btn-g1a{
+    display: flex;
+    flex-direction: row;
+}
+.student-profile-btn .btn-g1 .btn-g1b{
+    display: flex;
+    flex-direction: row;
+}
+.student-profile-btn .btn-g2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.no-info{
+    display: none;
+    width: 100%; 
+    padding: 20px;
+    border-bottom: 1px solid rgb(190, 188, 188);
+    border-top: 1px solid rgb(190, 188, 188);
+    background-color: white;
+}
+.no-info p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.student-profile{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.stud{
+    display: flex;
+    margin-right: 50px;
+}
+.stud-pic{
+    display: flex;
+    margin-top: 15px;
+    border: none;
+    margin: 15px 10px 9px 15px;
+    box-shadow: 0px 0px 3px rgb(92, 90, 90);
+
+}
+.stud-pic img{
+    display: flex;
+    width: 200px;
+}
+.stud-info1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.stud-info1 p{
+    margin: 0px 0px 15px 22px;
+}
+.stud-info1 .info{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.stud-info2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+.stud-info2 p{
+    margin: 0px 0px 15px 22px;
+}
+.stud-info2 .info{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.edit-btn{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 4px 20px 4px 20px;
+    width: 100%;
+    background-color: rgb(234, 235, 235);
+}
+.edit-btn button{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    font-size: 15px;
+    color: rgb(52, 133, 209);
+    border: none;
+    cursor: pointer;
+}
+.main2{
+    display: none;
+    flex-direction: column;
+    padding: 5px 20px 5px 15px;
+    background-color: rgb(227, 225, 230);
+}
+.main2 .registration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.main2 .registration p{
+    margin: 5px 10px 5px 10px;
+}
+.main2 .registration select{
+    display: flex;
+    max-width: 1000px;
+    height: 30px;
+    margin: 5px 30px 60px 10px;
+    font-size: 16px;
+}
+.main2 .Add-Drop{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.main2 .Add-Drop p{
+    padding: 10px 10px 10px 20px;
+}
+.main2 .readmission{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.main2 .readmission p{
+    padding: 10px 10px 10px 20px;
+}
+.main2 .transfer{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.main2 .transfer p{
+    padding: 10px 10px 10px 20px;
+}
+.main2 .withdrawal{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.main2 .withdrawal p{
+    padding: 10px 10px 10px 20px;
+}
+
+.main3{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 5px 15px;
+    background-color: rgb(227, 225, 230);
+}
+.main3  .transcript{
+    display: none;
+    overflow-x: auto;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    background-color: white;
+}
+.main3 .transcript-h1{
+    display: flex;
+    align-items: center;
+    color: rgb(43, 177, 182);
+    padding: 4px 0px 4px 0px;
+    background-color: white;
+    font-weight: 600;
+}
+.main3 .transcript-h2{
+    display: flex;
+    align-items: center;
+    color: rgb(13, 14, 14);
+    padding: 4px 0px 4px 0px;
+    background-color: white;
+    font-weight: 600;
+}
+.main3 table{
+    max-width: 1070px;
+    background-color: white;
+    margin: 0px 20px 15px 0px;
+}
+.main3 tr{
+    width: 100%;
+}
+.main3 .red{
+    background-color: rgb(197, 9, 9);
+    border: 2px solid rgb(197, 9, 9);
+
+}
+.main3 .red th{
+    padding: 3px 10px 3px 10px;
+}
+.main3 .gray{
+    background-color: rgb(240, 237, 237);
+}
+.main3 .gray td{
+    padding: 2px 10px 2px 10px;
+}
+.main3 .white{
+    background-color: rgb(255, 255, 255);
+}
+.main3 .white td{
+    padding: 2px 10px 2px 10px;
+}
+.main3 .gray1{
+    background-color: rgb(180, 180, 180);
+    height: 25px;
+}
+.main3 .gpa-summary{
+    display: none;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    margin-top: -2px;
+}
+.main3 .gpa-summary .gpa-summary1{
+    width: 100%;
+    margin: 3px 0px 10px 10px;
+    font-size: 19px;
+}
+.main3 .gpa-summary .gpa-summary2{
+    width: 100%;
+    margin: 3px 0px 3px 10px;
+    border-top: 1px solid rgb(211, 209, 209);
+}
+.main3 .gpa-summary .gpa-summary2 p{
+    margin-top: 9px;
+}
+
+.grade-report{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+
+}
+.grade-report .transcript-h1 p {
+    margin: 5px 10px 5px 10px;
+}
+.grade-report .grade-year{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.grade-report .grade-year p{
+    margin: 5px 0px 5px 10px;
+}
+.grade-report .grade-year select{
+    display: flex;
+    max-width: 1000px;
+    height: 30px;
+    margin: 5px 30px 60px 10px;
+    font-size: 16px;
+}
+
+.assessment{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+
+}
+.assessment .transcript-h1 p {
+    margin: 5px 10px 5px 10px;
+}
+.assessment .assessment-result{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.assessment .assessment-result p{
+    margin: 5px 0px 5px 10px;
+}
+.assessment .assessment-result select{
+    display: flex;
+    max-width: 1000px;
+    height: 30px;
+    margin: 5px 30px 60px 10px;
+    font-size: 16px;
+}
+.attendance{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.attendance p{
+    padding: 10px 10px 10px 20px;
+}
+.costsharing{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(206, 203, 203);
+}
+.costsharing p{
+    padding: 10px 10px 10px 20px;
+}
+.main4{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 5px 15px;
+    background-color: rgb(227, 225, 230);
+}
+.main4 .dorm-info{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+}

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astu clone</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!--log in page-->
+  <div id="container2" class="container2">
+    <div class="astu-logo">
+      <img src="images/astu_logo.svg" alt="">
+      <div class="a1">
+        <span><p>ASTU </p></span>
+        <p class="p11"> E-Student</p>
+      </div>
+    </div>
+    <div class="login">
+      <div class="form">
+        <p>For Students Only</p>
+        <div class="inputbox">
+          <input id="name" value="" name="name" type="text" placeholder="Username">
+          <span><img src="icons/email.png" alt=""></span>
+        </div>
+        <div class="inputbox">
+          <input id="password" value="" name="Password" type="password" placeholder="Password" required>
+          <span><img src="icons/lock.png" alt=""></span>
+        </div>
+       
+      </div>
+      <button onclick="signin()">
+        <img src="icons/right-to-bracket-solid.svg" alt="">
+        Sign in
+      </button>
+      <div class="forgot">
+        <a href="#">Forgot Password?</a>
+      </div>
+      </div>
+  </div>
+ 
+
+  <!--all-->  
+  <div id="all" class="all">
+
+    <!--sidebar--> 
+
+    <div id="sidebar" class="sidebar">
+      <div class="astu-pic">
+        <img src="images/astu_logo.svg" alt="">
+      </div>
+      <p>2022/2023 Second Semester</p>
+      <div class="sidebar-elements">
+        <div class="sidebar-element">
+          <button onclick="studentProfile()">
+            <img src="icons/user.png" alt=""><p>Student Profile</p>
+          </button>
+        </div>
+        <div class="sidebar-element">
+          <button onclick="enrollment()">
+            <img src="icons/cells.png" alt=""><p>Enrolment Record</p>
+          </button>
+        </div>
+        <div class="sidebar-element">
+          <button onclick="acadamicHistory()">
+            <img src="icons/history.png" alt=""><p>Acadamic History</p>
+          </button>
+        </div>
+        <div class="sidebar-element">
+          <button class="aca-abtn" onclick="hide_acadamics()">
+            <img src="icons/graduation-hat.png" alt=""><p>Acadamics</p><img class="arrow" src="icons/arrow-down-sign-to-navigate.png" alt="">
+          </button>   
+        </div>
+
+        <div id="acadamics" class="acadamics">
+          <button><img src="icons/rec.png" alt=""><p>Curriculum</p></button>
+          <button><img src="icons/rec.png" alt=""><p>Registration</p></button>
+          <button><img src="icons/rec.png" alt=""><p>Course Aoudit</p></button>
+          <button><img src="icons/rec.png"alt=""><p>Payment</p></button>
+        </div>
+
+        <div class="sidebar-element">
+          <button class="req-btn" onclick="hide_request()">
+            <img src="icons/question (1).png" alt=""><p>Request</p><img class="arrow" src="icons/arrow-down-sign-to-navigate.png" alt="">
+          </button>
+        </div>
+
+        <div id="request" class="request">
+          <button><img src="icons/rec.png" alt=""><p>Add Drop</p></button>
+          <button><img src="icons/rec.png" alt=""><p>Withdraw</p></button>
+          <button><img src="icons/rec.png" alt=""><p>Clearance</p></button>
+          <button><img src="icons/rec.png" alt=""><p>Compliant Result</p></button>
+          <button><img src="icons/rec.png" alt=""><p>Course Exemption</p></button>
+          
+        </div>
+
+        <div class="sidebar-element">
+          <button onclick="dormitory()">
+            <img src="icons/door (1).png" alt=""><p>Dormitory</p>
+          </button>
+        </div>
+      </div> 
+    </div>
+
+    <!--container-->
+
+    <div class="container">
+
+      <!--Top-->
+
+      <div class="top">
+        
+        <div class="hidder">
+          <button onclick="hide()"><img src="icons/menu.png" alt=""></button>
+        </div>
+
+
+        <div class="profile">
+          
+
+          <div id="tooltip" class="tooltip">
+            <div class="tooltip1">
+              <div class="tooltip1a">
+                <img src="images/tesfaye.JPG" alt="">
+              </div>
+              <div class="tooltip1b">
+                <p class="p1">Tesfaye Zeleke</p>
+                <p class="p2">Software Enginnering</p>
+                <p class="p3">Scond Year</p>
+              </div>
+            </div>
+            <div class="tooltip2">
+              <button>
+                <img src="icons/user.png" alt=""><p>Change Password</p>
+              </button>
+              <button onclick="logout()">
+                <img src="icons/logout.png" alt=""><p>Log out</p>
+              </button>
+            </div>
+          </div>
+
+          <button onclick="tooltip()"><img src="icons/user.png" alt=""></button>
+
+         
+        </div>
+      </div>
+
+      <!--Main--> 
+
+      <div id="main" class="main">
+
+         <!--Upcaming evevent-->
+
+        <div class="upcoming">
+          <img src="icons/calendar.png" alt="">
+          <p>Upcoming Events</p>
+        </div>
+
+        <!--student profile-->
+
+        <div class="student-profile">
+          <div class="stud">
+
+            <div class="stud-pic">
+              <img src="images/tesfaye.JPG" alt="">
+            </div>
+
+            <div class="stud-info1">
+              <p>
+                <span class="info">Full name: </span>
+                <span class="ans">Tesfaye Zeleke</span>
+            </p>
+            <p>
+                <span class="info">ID Numaber: </span>
+                <span class="ans">UGR/25639/14</span>
+            </p>
+            <p>
+              <span class="info">Admission Year: </span>
+              <span class="ans">2021/2022</span>
+            </p>
+            <p>
+              <span class="info">Dormitary: </span>
+              <span class="ans">B368 ,R68</span>
+            </p>
+            </div>
+
+            <div class="stud-info2">
+              <p>
+                <span class="info">Program: </span>
+                <span class="ans">Software Engineering</span>
+            </p>
+            <p>
+              <span class="info">Admission: </span>
+              <span class="ans">Undergraduate Regular</span>
+            </p>
+            <p>
+              <span class="info">Class Year: </span>
+              <span class="ans">Second Year</span>
+            </p>
+            <p>
+              <span class="info">Section: </span>
+              <span class="ans">Section 2</span>
+            </p>
+            </div>
+
+          </div>
+          
+          <!--upcoming event table-->
+
+          <div class="stud-upcoming">
+            <p><img src="icons/marketplace.png" alt="">Upcoming Events</p>
+            <table>
+              <tr>
+               <th>Date</th>
+               <th>Activity</th>
+               <th>Admission For</th>
+              </tr>
+              <tr>
+                <td class="td1">November 30, 2022-june 24,2023</td>
+                <td>Grade submission 2022/2023 First Semester</td>
+                <td>Undregraduate Regular</td>
+              </tr>
+              <tr>
+                <td class="td1">March 20, 2023 -july 7,2023</td>
+                <td>Grade submission 2022/2023 Second Semester</td>
+                <td>Undregraduate Regular</td>
+              </tr>
+              <tr>
+                <td class="td1">November 5, 2022 - August 22,2023</td>
+                <td>service 2022/2023 First Semester</td>
+                <td>Undregraduate Regular</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+<!--student profile menu-->
+      
+      <div id="main1" class="main1">
+
+          <!--top bar student profile-->
+ 
+         <div class="student-topbar">
+           
+           <p>Student profile</p>
+         </div>
+         <!--student profile buttons-->
+         <div class="student-profile-btn">
+          <div class="btn-g1">
+            <div class="btn-g1a">
+              <button onclick="profile()">Profile</button>
+              <button onclick="not()">Applicant</button>
+              <button onclick="not()">Contact Adress</button>
+            </div>
+            <div class="btn-g1b">
+              <button onclick="not()">Emergency Contact</button>
+              <button onclick="not()">Family Background</button>
+              <button onclick="not()">Education</button>
+            </div>
+          </div>
+          
+          <div class="btn-g2">
+            <button onclick="not()">Experiance</button>
+            <button onclick="not()">Program Preference</button>
+         </div>
+          </div>
+          <div id="no-info" class="no-info">
+            <p>No Information Found</p>
+          </div>
+         
+ 
+         <!--student profile-->
+ 
+         <div id="student-profile" class="student-profile">
+           <div class="stud">
+ 
+             <div class="stud-pic">
+               <img src="images/tesfaye.JPG" alt="">
+             </div>
+ 
+             <div class="stud-info1">
+               <p>
+                 <span class="info">Full name: </span>
+                 <span class="ans">Tesfaye Zeleke</span>
+             </p>
+             <p>
+                 <span class="info">ID Numaber: </span>
+                 <span class="ans">UGR/25639/14</span>
+             </p>
+             <p>
+               <span class="info">Admission Year: </span>
+               <span class="ans">2021/2022</span>
+             </p>
+             <p>
+               <span class="info">Dormitary: </span>
+               <span class="ans">B368 ,R68</span>
+             </p>
+             <p>
+              <span class="info">Gender: </span>
+              <span class="ans">marketplace</span>
+            </p>
+            <p>
+              <span class="info">Martial Status: </span>
+              <span class="ans">Single</span>
+              <p>
+                <span class="info">Nationality: </span>
+                <span class="ans">Ethiopian</span>
+              </p>
+            </p>
+             </div>
+ 
+             <div class="stud-info2">
+               <p>
+                 <span class="info">Program: </span>
+                 <span class="ans">Software Engineering</span>
+             </p>
+             <p>
+               <span class="info">Admission: </span>
+               <span class="ans">Undergraduate Regular</span>
+             </p>
+             <p>
+               <span class="info">Class Year: </span>
+               <span class="ans">Second Year</span>
+             </p>
+             <p>
+               <span class="info">Section: </span>
+               <span class="ans">Section 2</span>
+             </p>
+             <p>
+              <span class="info">Region: </span>
+              <span class="ans">Oromia</span>
+            </p>
+            <p>
+              <span class="info">Disability: </span>
+              <span class="ans">No Disability</span>
+            </p>
+            <p>
+              <span class="info">Place Of Birth: </span>
+              <span class="ans">Aleltu</span>
+            </p>
+          </div>
+ 
+         </div>
+
+         <div class="edit-btn">
+          <button onclick="not()">Edit</button>
+        </div>
+         </div>
+
+      </div>
+
+
+      <!--Enrolment Record-->
+
+      <div id="main2" class="main2">
+
+        <!--top bar student profile-->
+
+       <div class="student-topbar">
+         
+         <p>Enrollment Record</p>
+       </div>
+       <!--student profile buttons-->
+       <div class="student-profile-btn">
+        <div class="btn-g1">
+          <div class="btn-g1a">
+            <button onclick="registration()">Registration</button>
+            <button onclick="add()">Add-Drop</button>
+            <button onclick="readmission()">Readmission</button>
+             <button onclick="transfer()">Transfer</button>
+          </div>
+          <div class="btn-g1b">
+           
+            <button onclick="withdrawal()">Withdrawal</button>
+          </div>
+        </div>
+        <div id="registration" class="registration">
+          <p><b>Select Registration</b></p>
+          <select name="" id="reg">
+            <option value=""><b>Please select...</b></option>
+            <option value="">2022/2023 First semester</option>
+            <option value="">2022/2023 Second semester</option></select>
+          </div>
+          <div id="Add-Drop" class="Add-Drop">
+            <p><b>No Add-Drop History</b></p>
+          </div>
+          <div id="readmission" class="readmission">
+            <p><b>No Readmission History</b></p>
+          </div>
+          <div id="transfer" class="transfer">
+            <p><b>No Transfer History</b></p>
+          </div>
+          <div id="withdrawal" class="withdrawal">
+            <p><b>No Withdraw History</b></p>
+          </div>
+        </div>
+
+    </div>
+
+    <!--acdamic history-->
+
+    <div id="main3" class="main3">
+
+      <!--top bar student profile-->
+
+     <div class="student-topbar">
+       
+       <p>Acadamic History</p>
+     </div>
+     <!--student profile buttons-->
+     <div class="student-profile-btn">
+      <div class="btn-g1">
+        <div class="btn-g1a">
+          <button onclick="transcript()">Transcript</button>
+          <button onclick="gpaSum()">GPA summary</button>
+          <button onclick="gradeReport()">Grade seport</button>
+          
+        </div>
+        <div class="btn-g1b">
+          <button onclick="assessment()">Assessment result</button>
+          <button onclick="attendance()">Attendance</button>
+        </div>
+        <div class="btn-g1b">
+          <button onclick="costShare()">Cost sharing history</button>
+        </div>
+      </div>
+      </div>
+      <div id="transcript" class="transcript">
+        <div class="transcript-h1">
+          <p>* this is not official transcript</p>
+        </div>
+        <div class="transcript-h2">
+          <p>2021/2022 First Semister [First Year]</p>
+        </div>
+        <table>
+        <tr class="red">
+          <th>Code</th>
+          <th>Course Title</th>
+          <th>Credit Hour</th>
+          <th>Grade</th>
+          <th>Point</th>
+          <th>Avarage</th>
+        </tr>
+        <tr class="gray">
+          <td>CHEM1101</td>
+          <td>General Chemistry</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="white">
+          <td>LART1001</td>
+          <td>Introduction to Civic & Ethics</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray">
+          <td>MATHS1101</td>
+          <td>Applied Mathmathics</td>
+          <td>4</td>
+          <td>A+</td>
+          <td>16</td>
+          <td></td>
+        </tr>
+        <tr class="white">
+          <td>PHYS1001</td>
+          <td>General Physics</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray">
+          <td>CSEg1101</td>
+          <td>Introduction to Computing</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="white">
+          <td>Enla1001</td>
+          <td>Communication English</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray">
+          <td>SpSc1101</td>
+          <td>Physical Fitness</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray1">
+          <td><b>Semester total</b></td>
+          <td></td>
+          <td>19</td>
+          <td></td>
+          <td>61</td>
+          <td>4.00</td>
+        </tr>
+        <tr class="gray1">
+          <td><b>Acadamic Status promoted</b></td>
+          <td></td>
+          <td>19</td>
+          <td></td>
+          <td>61</td>
+          <td>4.00</td>
+        </tr>
+      </table>
+
+      <div class="transcript-h2">
+        <p>2021/2022 First Semister [First Year]</p>
+      </div>
+      <table>
+        <tr class="red">
+          <th>Code</th>
+          <th>Course Title</th>
+          <th>Credit Hour</th>
+          <th>Grade</th>
+          <th>Point</th>
+          <th>Avarage</th>
+        </tr>
+        <tr class="gray">
+          <td>CHEM1101</td>
+          <td>General Chemistry</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="white">
+          <td>LART1001</td>
+          <td>Introduction to Civic & Ethics</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray">
+          <td>MATHS1101</td>
+          <td>Applied Mathmathics</td>
+          <td>4</td>
+          <td>A+</td>
+          <td>16</td>
+          <td></td>
+        </tr>
+        <tr class="white">
+          <td>PHYS1001</td>
+          <td>General Physics</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray">
+          <td>CSEg1101</td>
+          <td>Introduction to Computing</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="white">
+          <td>Enla1001</td>
+          <td>Communication English</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray">
+          <td>SpSc1101</td>
+          <td>Physical Fitness</td>
+          <td>3</td>
+          <td>A+</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr class="gray1">
+          <td><b>Semester total</b></td>
+          <td></td>
+          <td>19</td>
+          <td></td>
+          <td>61</td>
+          <td>4.00</td>
+        </tr>
+        <tr class="gray1">
+          <td><b>Acadamic Status promoted</b></td>
+          <td></td>
+          <td>19</td>
+          <td></td>
+          <td>61</td>
+          <td>4.00</td>
+        </tr>
+      </table>
+
+      </div>
+      <!--gpa summary-->
+      
+      <div id="gpa-summary" class="gpa-summary">
+        <div class="gpa-summary1">
+          <span><p >Grade Point Average (GPA) Summary</p></span>
+        </div>
+        <div class="gpa-summary2">
+          <p><b>Acadamic status:</b> Promoted</p>
+          <p><b>Semester GPA:</b> 4.00</p>
+          <p><b>Comulative GPA:</b> 4.00</p>
+        </div>
+      </div>
+      <!--assessment result-->
+
+      <div id="grade-report" class="grade-report">
+        <div class="transcript-h1">
+          <p> * this is not official grade report</p>
+        </div>
+          <div class="grade-year">
+            <p><b>Select Year</b></p>
+            <select name="" id="reg">
+              <option value=""><b>Please select...</b></option>
+              <option value="">2022/2023 First semester</option>
+              <option value="">2022/2023 Second semester</option></select>
+            </div>
+        </div>
+        <!--grade report-->
+
+        <div id="assessment" class="assessment">
+          <div class="transcript-h1">
+            <p>* Choose course to view assessmennt result for that courset</p>
+          </div>
+            <div class="assessment-result">
+              <p><b>Select Course Enrollment</b></p>
+              <select name="" id="reg">
+                <option value=""><b>Please select...</b></option>
+                <option value="">Applied 1</option>
+                <option value="">General physics</option>
+                <option value="">General chemistry</option>
+                <option value="">communication English</option>
+                <option value="">introduction to computing</option>
+              </select>
+              </div>
+          </div>
+          <!--attendance and costsharing-->
+          <div id="attendance" class="attendance">
+            <p><b>No Attendance History Aviabl</b></p>
+          </div>
+          <div id="costsharing" class="costsharing">
+            <p><b>No Costsharing History Aviable</b></p>
+          </div>
+      </div>
+
+      <!--dormitary-->
+    
+      <div id="main4" class="main4">
+
+        <!--top bar student profile-->
+
+       <div class="student-topbar">
+         
+         <p>Dormitary info</p>
+       </div>
+        <div class="dorm-info">
+          <p><b>B368, R43</b></p>
+        </div>
+
+    </div>
+
+      <!--footer-->
+
+      <div id="footer" class="footer">
+        <p>copyright c2021 <a href="#">Tesfaye.</a>All right reserved</p>
+      </div>
+  </div>
+
+
+
+
+    </div>
+
+  </div>
+
+ <!--script--> 
+
+  <script src="main.js">
+  </script>
+
+</body>
+</html>

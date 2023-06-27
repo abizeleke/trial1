@@ -1,0 +1,142 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.upcoming{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0px 12px 10px;
+    background-color: rgb(27, 170, 196);
+    border-radius: 5px;
+    margin-right: 20px;
+    
+}
+.upcoming img{
+    width: 20px;
+}
+.upcoming p{
+    margin-left: 7px;
+    color: white;
+    font-weight: normal;
+}
+
+.student-profile{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.stud{
+    display: flex;
+    margin-right: 50px;
+}
+.stud-pic{
+    display: flex;
+    margin-top: 15px;
+    border: none;
+    margin: 15px 10px 9px 15px;
+    box-shadow: 0px 0px 3px rgb(92, 90, 90);
+
+}
+.stud-pic img{
+    display: flex;
+    width: 200px;
+}
+.stud-info1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.stud-info1 p{
+    margin: 0px 0px 15px 22px;
+}
+.stud-info1 .info{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.stud-info2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+.stud-info2 p{
+    margin: 0px 0px 15px 22px;
+}
+.stud-info2 .info{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.stud-upcoming{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 50px;
+}
+.stud-upcoming p{
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px 0px 5px 0px;
+    border-top: 2px solid rgb(218, 214, 214);
+    max-width: 1065px;
+}
+.stud-upcoming p img{
+    width: 20px;
+    margin-right: 10px;
+}
+.stud-upcoming table{
+    width: 100%;
+    background-color: rgb(185, 183, 183);
+    max-width: 1070px;
+    margin: 10px 20px 10px 13px;
+    border-radius: 3px;
+}
+.stud-upcoming table tr{
+    background-color: white;
+    width: 100%;
+}
+.stud-upcoming table tr th{
+    width: 100px;
+    padding: 7px;
+}
+.stud-upcoming table tr td{
+    width: 100px;
+    padding: 9px;
+    margin-top: 0px;
+}
+.stud-upcoming table .td1{
+    font-weight: 550;
+}
+.footer{
+    display: none;
+    margin: 5px 10px 5px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 2px gray;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+}
+.footer p{
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+}
+
+
+
+

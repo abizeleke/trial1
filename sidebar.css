@@ -1,0 +1,134 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.astu-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 211, 211);
+    margin-bottom: 3px;
+    box-shadow: 0px 0px 4px rgb(197, 198, 199);
+    overflow: hidden;
+}
+.astu-pic img{
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar p{
+    display: inline-block;
+    color: rgb(8, 209, 223);
+    font-size: 15px;
+    margin-left: 8px;
+}
+.sidebar-elements{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   padding: 10px 0px 20px 0px;
+}
+.sidebar-element{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+.sidebar-elements{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-element{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.sidebar-element button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 3px 0px 3px 0px;
+}
+.sidebar-element :hover{
+    background-color: rgb(236, 233, 233);
+}
+.sidebar-element button img{
+    width: 22px;
+    margin-left: 10px;
+}
+.sidebar-element button p{
+    font-size: 17px;
+    color: black;
+}
+
+.acadamics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+.acadamics :hover{
+    background-color: rgb(240, 238, 238);
+}
+.acadamics button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    width: 100%;
+    margin-top: 2px;
+    padding: 2px 0px 2px 0px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.acadamics button img{
+    width: 14px;
+    margin-left: 25px;
+}
+.acadamics button p{
+    color: rgb(63, 61, 61);
+    font-size: 16px;
+}
+
+.request{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+.request :hover{
+    background-color: rgb(240, 238, 238);
+}
+.request button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    width: 100%;
+    margin-top: 2px;
+    padding: 2px 0px 2px 0px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.request button img{
+    width: 14px;
+    margin-left: 25px;
+}
+.request button p{
+    color: rgb(63, 61, 61);
+    font-size: 16px;
+}
