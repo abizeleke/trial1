@@ -3,6 +3,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+ 
 }
 .container2{
     display: flex;
@@ -10,9 +12,9 @@ body{
     align-items: center;
     justify-content: center;   
     height: 100hv;
+    width: 100%;
+    max-width: 500px;
     background-color: rgb(236, 236, 240);
-    padding: 10px;
-    margin-top: 40px;
 }
 .astu-logo{
     width: 100%;
@@ -21,7 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color:rgb(236, 236, 240);
-    margin: 10px 0px 10px 0px;
+    margin: 100px 0px 10px 0px;
 }
 .astu-logo .a1{
     display: flex;
@@ -49,6 +51,7 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 2px rgb(218, 213, 213);
     border-radius: 3px;
+    margin: 20px;
 }
 .login .form{
     display: flex;
@@ -67,7 +70,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 400px;
+    width: 100%;
     height: 37px;
     background-color: white;
     padding: 0px 5px 0px 3px;
@@ -86,7 +89,7 @@ body{
     font-size: 17px;
 }
 .inputbox input:focus{
-    border: blue;
+    border: rgb(184, 184, 228);
 }
 ::placeholder{
       margin: 10px;
