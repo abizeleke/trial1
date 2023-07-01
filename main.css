@@ -3,7 +3,6 @@
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    margin: 5px 5px 5px 5px;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -15,11 +14,11 @@
     padding: 12px 0px 12px 10px;
     background-color: rgb(27, 170, 196);
     border-radius: 5px;
-    margin-right: 20px;
+    margin: 5px 10px 5px 10px;
     
 }
 .upcoming img{
-    width: 20px;
+    width: 0px;
 }
 .upcoming p{
     margin-left: 7px;
@@ -84,6 +83,7 @@
     flex-direction: column;
     width: 100%;
     margin-right: 50px;
+    overflow: auto;
 }
 .stud-upcoming p{
     margin-left: 15px;
@@ -102,7 +102,7 @@
 .stud-upcoming table{
     width: 100%;
     background-color: rgb(185, 183, 183);
-    max-width: 1070px;
+    max-width: 1010px;
     margin: 10px 20px 10px 13px;
     border-radius: 3px;
 }
