@@ -1,7 +1,7 @@
 .main1{
     display: none;
     flex-direction: column;
-    padding: 5px 20px 5px 15px;
+    padding: 3px;
     background-color: rgb(227, 225, 230);
 }
 .student-topbar{
@@ -151,7 +151,7 @@
 .main2{
     display: none;
     flex-direction: column;
-    padding: 5px 20px 5px 15px;
+    padding: 3px;
     background-color: rgb(227, 225, 230);
 }
 .main2 .registration{
@@ -165,9 +165,9 @@
 }
 .main2 .registration select{
     display: flex;
-    max-width: 1000px;
+    max-width: 900px;
     height: 30px;
-    margin: 5px 30px 60px 10px;
+    margin: 5px 0px 60px 10px;
     font-size: 16px;
 }
 .main2 .Add-Drop{
@@ -210,7 +210,7 @@
 .main3{
     display: flex;
     flex-direction: column;
-    padding: 5px 20px 5px 15px;
+    padding: 3px;
     background-color: rgb(227, 225, 230);
 }
 .main3  .transcript{
@@ -240,6 +240,7 @@
     max-width: 1070px;
     background-color: white;
     margin: 0px 20px 15px 0px;
+    overflow: auto;
 }
 .main3 tr{
     width: 100%;
@@ -361,7 +362,7 @@
 .main4{
     display: flex;
     flex-direction: column;
-    padding: 5px 20px 5px 15px;
+    padding: 3px;
     background-color: rgb(227, 225, 230);
 }
 .main4 .dorm-info{
