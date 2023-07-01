@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 2px 3px gray;
     margin-left: 0px;
+    margin-bottom: 0px;
     border-radius: 2px;
     padding-left: 10px;
 }
@@ -27,6 +27,7 @@
     width: 100%;
     align-items: center;
     justify-content: end;
+    padding: 3px;
   
 }
 .profile button{
