@@ -1,11 +1,11 @@
 var a=1;
 function hide(){
     if(a==1){
-        document.getElementById("sidebar").style.minWidth="210px";
+        document.getElementById("sidebar").style.display="flex";
         return a=0;
     }
     else{
-        document.getElementById("sidebar").style.minWidth="0px";
+        document.getElementById("sidebar").style.display="none";
         return a=1;
     }
 }
@@ -38,7 +38,6 @@ function signin(){
     if(c==1){
         document.getElementById("all").style.display="flex";
         document.getElementById("container2").style.display="none";
-        document.getElementById("footer").style.display="flex";
         document.getElementById("main1").style.display="none";
         document.getElementById("main2").style.display="none";
         document.getElementById("main3").style.display="none";
@@ -75,12 +74,17 @@ function studentProfile(){
     if(f==1){
         document.getElementById("main").style.display="none";
         document.getElementById("main1").style.display="flex"; 
-        document.getElementById("sidebar").style.minWidth="0px";
+        document.getElementById("sidebar").style.display="none";
         document.getElementById("main2").style.display="none";
         document.getElementById("main3").style.display="none";
         document.getElementById("main4").style.display="none"; 
         document.getElementById("student-profile").style.display="flex"; 
-        return f=1;
+        return f=0;
+    }
+    else{
+        document.getElementById("main1").style.display="none"; 
+        document.getElementById("sidebar").style.display="none";
+        return f=1
     }
 }
 var j=1;
@@ -107,13 +111,14 @@ function enrollment(){
     if(t==1){
         document.getElementById("main").style.display="none";
         document.getElementById("main2").style.display="flex";
-        document.getElementById("sidebar").style.minWidth="0px"; 
+        document.getElementById("sidebar").style.display="none"; 
         document.getElementById("main1").style.display="none";
         document.getElementById("main3").style.display="none";
         document.getElementById("main4").style.display="none"; 
         document.getElementById("registration").style.display="flex";
         return t=1;
     }
+
 }
 var g1=1;
 function registration(){
@@ -175,7 +180,7 @@ function acadamicHistory(){
     if(h==1){
         document.getElementById("main").style.display="none";
         document.getElementById("main3").style.display="flex"; 
-        document.getElementById("sidebar").style.minWidth="0px";
+        document.getElementById("sidebar").style.display="none";
         document.getElementById("main1").style.display="none";
         document.getElementById("main2").style.display="none";
         document.getElementById("main4").style.display="none";
@@ -260,7 +265,7 @@ function dormitory(){
     if(i==1){
         document.getElementById("main").style.display="none";
         document.getElementById("main3").style.display="none"; 
-        document.getElementById("sidebar").style.minWidth="0px";  
+        document.getElementById("sidebar").style.display="none";  
         document.getElementById("main1").style.display="none";
         document.getElementById("main2").style.display="none";
         document.getElementById("main4").style.display="flex";
